@@ -1,0 +1,43 @@
+{
+    "process": "Company Incorporation",
+    "documents_uploaded": [
+        "Beneficial_Ownership_Declaration_Test.docx",
+        "Articles_of_Association_Test.docx",
+        "Board_Resolution_Test.docx"
+    ],
+    "required_documents": [
+        "Company General Incorporation, AoA",
+        "Resolution for Incorporation",
+        "Appointment of Signatory for Incorporation Purposes"
+    ],
+    "missing_documents": [
+        "Company General Incorporation",
+        "Appointment of Signatory for Incorporation Purposes"
+    ],
+    "issues_found": [
+        {
+            "document": "Beneficial_Ownership_Declaration_Test.docx",
+            "issue": "Incomplete Beneficial Ownership Declaration",
+            "explanation": "The document only lists two beneficial owners, but it should also include the personal details and service address for each beneficial owner, as well as passport copies of all current and past nationalities.",
+            "match_text": "Beneficial Owner: Alice Smith — 60%\nBeneficial Owner: Bob Khan — 40%\nSigned: Alice Smith\nSigned: Bob Khan"
+        },
+        {
+            "document": "Articles_of_Association_Test.docx",
+            "issue": "Jurisdiction clause",
+            "explanation": "The jurisdiction clause in the document states that all disputes shall be referred to UAE local courts. However, for a company incorporated in the Abu Dhabi Global Market (ADGM), disputes should be referred to the ADGM Courts.",
+            "match_text": "All disputes shall be referred to UAE local courts."
+        },
+        {
+            "document": "Board_Resolution_Test.docx",
+            "issue": "Incorrect date format",
+            "explanation": "The date format in the document is not in the format required by ADGM (DD-MM-YYYY).",
+            "match_text": "15-Aug-2025"
+        },
+        {
+            "document": "Board_Resolution_Test.docx",
+            "issue": "Incorrect registered office address format",
+            "explanation": "The registered office address provided is not in the format required by ADGM (Office number, Building name, ADGM).",
+            "match_text": "Office 2201, Al Sila Tower, ADGM"
+        }
+    ]
+}
